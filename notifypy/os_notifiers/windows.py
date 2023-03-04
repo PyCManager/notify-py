@@ -11,7 +11,7 @@ from ._base import BaseNotifier
 
 
 class WindowsNotifier(BaseNotifier):
-    def __init__(self):
+    def __init__(self, **kwargs):
         """Main Notification System for Windows. Basically ported from go-toast/toast"""
 
         # Create the base
@@ -92,6 +92,7 @@ $toast = New-Object Windows.UI.Notifications.ToastNotification $xml
         notification_icon,
         application_name,
         notification_audio,
+        **kwargs,
     ):
         generated_file = self._generate_notification_xml(
             notification_title=notification_title,

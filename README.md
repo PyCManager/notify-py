@@ -27,7 +27,7 @@ You can read the docs on this Git's Wiki, or [here](https://ms7m.github.io/notif
 
 ## Supported Platforms.
 
-- Windows 10
+- Windows 10/11
 - macOS 10 >=10.10
 - Linux (libnotify)
 
@@ -118,6 +118,16 @@ def your_function():
 
 ---
 
+# CLI
+A CLI is available when you install notify-py
+
+```bash
+notifypy --title --message --applicationName --iconPath --soundPath
+```
+You may need to add ``python3 -m`` to the beginning.
+
+---
+
 ## Important Caveats
 
 - As it stands (May 18, 2020), this is simply a notification service. There is _no_ support for embedding custom actions (buttons, dialogs) regardless of platform. Other then telling you if the shell command was sent, there is also no confirmation on user action on the notification.
@@ -137,6 +147,8 @@ def your_function():
 - [Leterax](https://github.com/Leterax)
 - [jnoortheen](https://github.com/jnoortheen)
 - [dynobo](https://github.com/dynobo)
+- [Xou](https://github.com/GiorgosXou)
+
 
 ---
 
